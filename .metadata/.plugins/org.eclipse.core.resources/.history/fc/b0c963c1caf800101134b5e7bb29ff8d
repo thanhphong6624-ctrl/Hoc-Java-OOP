@@ -1,0 +1,6 @@
+package model;
+
+public interface Book extends ItemStandard {
+	void printTitle();
+
+}

@@ -1,0 +1,17 @@
+package helloWord;
+
+import java.util.Scanner;
+
+import model.Phone;
+
+public class Practice331 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("宛先 ＞ ");
+		String address = sc.next();
+		Phone phone = new Phone();
+		phone.setAddress(address);
+		phone.email();
+		sc.close();
+	}
+}

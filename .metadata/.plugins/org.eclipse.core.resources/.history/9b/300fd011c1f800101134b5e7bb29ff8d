@@ -1,0 +1,17 @@
+package model;
+
+public class Phone implements MobilePhone {
+	private String address;
+	@Override
+	public void setAddress(String address) {
+		// TODO Auto-generated method stub
+		this.address = address;
+	}
+
+	@Override
+	public void email() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
