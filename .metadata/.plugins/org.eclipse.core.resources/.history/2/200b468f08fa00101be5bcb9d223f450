@@ -55,9 +55,11 @@ class Bai02 {
 				System.out.printf("Phương trình có 2 nghiệm riêng biệt, x1 = %.3f, x2 = %.3f ", x1, x2);
 			}
 		}
-		// toi dang tap dung modified ne!!
-		System.out.println("test git lan 2");
 		scanner.close();
 	}
+
+
+		
+	
 
 }
