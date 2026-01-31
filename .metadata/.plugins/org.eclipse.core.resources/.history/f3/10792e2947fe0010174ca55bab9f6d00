@@ -1,0 +1,42 @@
+package helloWord;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import model.BirthdayGift;
+import model.FlowerGift;
+import model.Gift;
+import model.WeddingGift;
+
+public class Practice342 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("商品コード1　＞");
+		int code1 = sc.nextInt();
+		System.out.println("商品名1　＞");
+		String name1 = sc.next();
+		Gift gift1 = new BirthdayGift(code1, name1);
+		System.out.println("商品コード2　＞");
+		int code2 = sc.nextInt();
+		System.out.println("商品名2　＞");
+		String name2 = sc.next();
+		Gift gift2 = new WeddingGift(code2, name2);
+		System.out.println("商品コード3　＞");
+		int code3 = sc.nextInt();
+		System.out.println("商品名3　＞");
+		String name3 = sc.next();
+		Gift gift3 = new FlowerGift(code3, name3);
+		ArrayList<Gift> list = new ArrayList<Gift>();
+		list.add(gift1);
+		list.add(gift2);
+		list.add(gift3);
+
+		for (Gift gift : list) {
+			gift.displayGift();
+		}
+		sc.close();
+	}
+
+}

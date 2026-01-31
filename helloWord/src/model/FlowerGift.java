@@ -1,0 +1,14 @@
+package model;
+
+public class FlowerGift extends Gift {
+	public FlowerGift(int code, String name) {
+		super(code, name);
+	}
+
+	@Override
+	public void displayGift() {
+		System.out.println("<フラワーギフト>");
+		super.displayGift();
+	}
+
+}

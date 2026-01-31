@@ -1,0 +1,24 @@
+package helloWord;
+
+import java.util.ArrayList;
+
+import model.BirthdayGift;
+import model.Gift;
+import model.WeddingGift;
+
+public class Example342 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Gift gift1 = new BirthdayGift(5523, "リストウォッチ");
+		Gift gift2 = new WeddingGift(1122, "ティーカップ");
+		ArrayList<Gift> list = new ArrayList<Gift>();
+		list.add(gift2);
+		list.add(gift1);
+		for (Gift gift : list) {
+			gift.displayGift();
+		}
+
+	}
+
+}

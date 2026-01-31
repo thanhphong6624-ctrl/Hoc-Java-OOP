@@ -1,0 +1,11 @@
+package model;
+
+public class Gift {
+	private int code;
+	private String name;
+	public Gift(int code, String name) {
+		this.code = code;
+		this.name = name;
+	}
+	
+}
